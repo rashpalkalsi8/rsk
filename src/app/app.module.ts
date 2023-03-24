@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +12,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatTabsModule} from '@angular/material/tabs';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { MatChipsModule } from '@angular/material/chips';
+
 
 import { MatDatepickerModule, MatFormFieldModule, MatNativeDateModule  } from '@angular/material';
 
@@ -41,7 +44,10 @@ import { environment } from '../environments/environment';
     MatDatepickerModule,
     MatFormFieldModule, 
     MatNativeDateModule, 
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatChipsModule
 
   ],
   providers: [],

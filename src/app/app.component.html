@@ -26,7 +26,15 @@
                                       <p class="e">🤩<br>Excelent</p></div></div></div></div></div>
                                       <mat-slider [min]="1" [max]="10" [step]="1" [value]="1">
                                         <input matSliderThumb>
-                                      </mat-slider>
+                                      </mat-slider><br><br>
+                                      <mat-form-field appearance="fill">
+                                        <mat-label>Choose a date</mat-label>
+                                        <input matInput [matDatepicker]="picker">
+                                        <mat-hint>MM/DD/YYYY</mat-hint>
+                                        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                                        <mat-datepicker #picker></mat-datepicker>
+                                      </mat-form-field><br><br>
+                                     
                                       
              <br> <h3 class="how">For you today!</h3>
              <mat-tab-group>
